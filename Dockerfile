@@ -1,5 +1,8 @@
 FROM nginx:latest
 
+ENV USERNAME=admin \
+    PASSWORD=admin
+    
 MAINTAINER Liu Chong <mail@clojure.cn>
 
 RUN apt-get update && \
