@@ -1,7 +1,9 @@
 FROM nginx:latest
 
 ENV USERNAME=admin \
-    PASSWORD=admin
+    PASSWORD=admin \
+    PORT=80 \
+    PROXY_PASS=http://127.0.0.1:8080
     
 MAINTAINER Liu Chong <mail@clojure.cn>
 
